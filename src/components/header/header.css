@@ -1,0 +1,121 @@
+.headerContainer {
+  padding: 1rem 2rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  display: inline;
+}
+
+li {
+  float: left;
+  display: flex;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+.logo {
+  height: 5vh;
+}
+
+.search-container {
+  float: left;
+}
+
+.input {
+  /* padding: 6px;
+  margin-top: 8px;
+  font-size: 17px; */
+  border: none;
+  width: 48vw;
+  height: 4vh;
+}
+
+.search-container {
+  float: left;
+  /* padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px; */
+  border: none;
+  cursor: pointer;
+  /* height: 2.5vh; */
+}
+
+button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 15.5px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 2px;
+}
+.inputBox {
+  margin-top: -1vh;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .input {
+    width: 30vw;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .input {
+    width: 30vw;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .headerContainer {
+    padding: 1rem 1rem;
+  }
+  li a {
+    padding: 14px 7px;
+  }
+  .input {
+    width: 20vw;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .input {
+    width: 50vw;
+  }
+  li {
+    float: right;
+  }
+}

@@ -1,0 +1,40 @@
+.homeContainer {
+  width: 100%;
+  padding: "1rem";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardDiv {
+  flex: 30%;
+  padding: 1vw;
+}
+
+input {
+  text-align: center;
+  width: 30%;
+  height: 4vh;
+  margin-top: 2vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .cardDiv {
+    flex: 40%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .cardDiv {
+    flex: 50%;
+  }
+}
