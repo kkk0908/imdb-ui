@@ -14,7 +14,7 @@ function Card(props) {
 				<div className="movieInfo">
 					<p><FaCalendar /> {release_date}</p>
 					<p> <AiFillLike size={20} /> {vote_count}</p>
-					<p> <AiFillStar size={20} /> {vote_average}</p>
+					<p> <AiFillStar size={20} /> {vote_average}/10</p>
 				</div>
 
 			</div>

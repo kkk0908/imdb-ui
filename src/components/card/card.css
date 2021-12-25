@@ -21,7 +21,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 2px 16px;
-  justify-content: space-around;
+  justify-content: center;
 }
 .movietitle {
   widows: 100px;
@@ -29,8 +29,8 @@ img {
 }
 .movieInfo {
   display: flex;
-  justify-content: "center";
-  /* border: 2px solid green; */
+  justify-content: "inherit";
+
   /* flex-wrap: wrap; */
 }
 p {
