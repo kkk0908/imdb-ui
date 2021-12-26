@@ -35,7 +35,8 @@ li a:hover:not(.active) {
   background-color: #04aa6d;
 }
 .logo {
-  height: 5vh;
+  height: fit-content;
+  width: 14vh;
 }
 
 .search-container {
@@ -93,7 +94,10 @@ button {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .input {
-    width: 30vw;
+    width: 20vw;
+  }
+  .logo {
+    width: 14vh;
   }
 }
 
@@ -117,5 +121,10 @@ button {
   }
   li {
     float: right;
+  }
+
+  .logo {
+    width: 12vh;
+    height: fit-content;
   }
 }

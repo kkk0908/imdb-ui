@@ -8,8 +8,9 @@
 }
 
 .cardDiv {
-  flex: 30%;
+  width: 30%;
   padding: 1vw;
+  font-size: 1.5vw;
 }
 
 input {
@@ -29,12 +30,15 @@ input {
 @media only screen and (max-width: 768px) {
   .cardDiv {
     flex: 40%;
+    font-size: 2.5vw;
+    padding: 0.1vw;
   }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 485px) {
   .cardDiv {
     flex: 50%;
+    font-size: 4vw;
   }
 }

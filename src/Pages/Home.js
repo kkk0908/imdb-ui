@@ -21,7 +21,6 @@ justify-content:center
 	const loader = useRef(null);
 	const [query, setQuery] = useState("");
 	const { loading, error, list } = useFetch(query, page);
-	console.log(list)
 	const handleChange = (e) => {
 		if (!e.target.value) {
 
@@ -69,7 +68,7 @@ justify-content:center
 			<div className="homeContainer">
 				{
 					list.map((movie, index) => {
-						return (<div className="cardDiv" data-aos="flip-up" ><Card key={index} movieInfo={movie} /></div>)
+						return (<div key={index} className="cardDiv" data-aos="flip-up" ><Card key={index} movieInfo={movie} /></div>)
 					})
 				}
 
